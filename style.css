@@ -241,3 +241,47 @@ button:hover {
     }
 }
 
+/* Stilizare pentru fiecare tip de pizza */
+.pizza.supreme,
+.pizza.super-supreme,
+.pizza.cheese-lover,
+.pizza.veggie-lover,
+.pizza.meat-lover,
+.pizza.pepperoni,
+.pizza.hawaiian,
+.pizza.bbq-chicken,
+.pizza.chicken-supreme {
+    background-size: 40px 30px; /* Dimensiune imaginii */
+    background-repeat: no-repeat;
+    background-position: 0 50%; /* pozitia imaginii in cadrul elementului */
+    padding-left: 40px; /* spatiu pentru a face loc imaginii */
+}
+
+/* pozitia si imaginea pentru fiecare tip de pizza */
+.pizza.supreme {
+    background-image: url('https://i.gifer.com/Vv8G.gif'); 
+}
+.pizza.super-supreme {
+    background-image: url('https://cdn.dribbble.com/users/60266/screenshots/2307111/pizzas4.gif');
+}
+.pizza.cheese-lover {
+    background-image: url('https://i.gifer.com/Vv8G.gif'); 
+}
+.pizza.veggie-lover {
+    background-image: url('https://cdn.dribbble.com/users/60266/screenshots/2307111/pizzas4.gif');
+}
+.pizza.meat-lover {
+    background-image: url('https://i.gifer.com/Vv8G.gif'); 
+}
+.pizza.pepperoni {
+    background-image: url('https://cdn.dribbble.com/users/60266/screenshots/2307111/pizzas4.gif'); 
+}
+.pizza.hawaiian {
+    background-image: url('https://i.gifer.com/Vv8G.gif'); 
+}
+.pizza.bbq-chicken {
+    background-image: url('https://cdn.dribbble.com/users/60266/screenshots/2307111/pizzas4.gif'); 
+}
+.pizza.chicken-supreme {
+    background-image: url('https://i.gifer.com/Vv8G.gif'); 
+}
