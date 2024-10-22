@@ -41,3 +41,77 @@ header {
     from { text-shadow: 0 0 10px #52f4ea, 0 0 20px #52f4ea, 0 0 30px #0d9a91; }
     to { text-shadow: 0 0 20px #0d9a91, 0 0 30px #52f4ea, 0 0 40px #0d9a91; }
 }
+
+.sub-title {
+    font-size: 2em;
+    background: linear-gradient(45deg, #40E0D0, #52f4ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 2s ease-in-out infinite;
+}
+
+/* Logo Styling */
+.logo {
+    margin-left: 150px;
+    width: 480px;
+    height: auto;
+    display: inline-block;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.3));
+}
+
+.additional-image {
+    position: absolute;
+    top: 570px;
+    right: 1140px;
+    width: 200px;
+    height: auto;
+    animation: rotateImage 10s linear infinite;
+}
+
+/* Rotate Animation for Additional Image */
+@keyframes rotateImage {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Section Styling */
+.menu-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu Item Styling */
+.menu-item {
+    margin: 20px;
+    flex: 1;
+    min-width: 200px;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    color: #b2fefa;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #b2fefa;
+    padding-bottom: 5px;
+}
